@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* global css */
+.flex{
+    display: flex;
+}
+ul,p{
+    padding: 0px;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+}
+
+/* main banner  */
+.main_banner{
+    position: relative;
+}
+
+/* header css */
+header {
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-bottom: 1px solid #d7d7d76b;
+    padding: 10px 0px;
+}
+header nav .logo{
+    width: 13%;
+}
+header nav .menu ul li{
+    display: inline-block;
+    padding-left: 40px;
+}
+header nav .menu ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 400;
+}
+/* video css  */
+.video_banner video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.video_banner .transparent{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+/* banner contant  */
+.banner_contant {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+}
+
+.banner_contant form {
+    /* background-image: linear-gradient(80deg, #080707, transparent); */
+    background-color: #000000c4;
+    padding: 20px;
+}
+
+.banner_contant form  .form-control{
+    border-radius: unset;
+    margin-bottom: 12px;
+    background-color: unset;
+    color: #fff;
+    border: 1px solid #ffffff8a;
+    height: 34px;
+}
+.banner_contant .form-control:focus{
+    color: unset;
+    background-color: unset;
+    border-color: unset;
+    outline: unset;
+    box-shadow: unset;
+    border: 1px solid #ffffff8a;
+    color: #fff;
+}
+.banner_contant form label{
+    color: #fff;
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+.banner_contant form select {
+    background-color: transparent;
+    border-radius: unset;
+    color: #fff;
+}
+.banner_contant form select:focus{
+    color: #fff;
+    border: 1px solid #ffffff8a;
+}
+.banner_contant form select option{
+    background-color: #000;
+}
+.form-select:focus {
+    border-color: unset;
+    outline: 0;
+    box-shadow: unset;
+    border: 1px solid #ffffff8a;
+}
+.banner_contant form textarea{
+    resize: vertical;
+    width: 100%;
+    background-color: transparent;
+    height: 100px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.banner_contant form .msg{margin-top: 12px;}
